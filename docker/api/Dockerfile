@@ -20,6 +20,6 @@ COPY --from=build-stage /app/rust-edb-api/target/release/edb-api /edb-api
 # required to open binding to all address and not just localhost
 COPY --from=build-stage /app/rust-edb-api/Rocket.toml /Rocket.toml
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD ["/edb-api"]
