@@ -18,7 +18,7 @@ FROM debian as release-stage
 WORKDIR /
 
 RUN apt update && apt install -y libsqlite3-dev
-RUN apt update && apt install -y openssl-dev
+#RUN apt update && apt install -y openssl-dev
 COPY --from=build-stage /app/rust-edb-api/target/release/edb-api /edb-api
 # required to open binding to all address and not just localhost
 COPY --from=build-stage /app/rust-edb-api/Rocket.toml /Rocket.toml
