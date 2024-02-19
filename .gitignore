@@ -25,6 +25,9 @@
 go-edb-api
 
 data/
+logs/
 rust-dna/
 rust-edb-api/
-rust-loctogene/
+rust-genes/
+rust-auth/
+rust-sys/
