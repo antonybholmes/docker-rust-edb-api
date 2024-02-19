@@ -4,7 +4,9 @@ WORKDIR /app
 
 ADD rust-edb-api/ rust-edb-api/
 ADD rust-dna/ rust-dna/
-ADD rust-loctogene/ rust-loctogene/
+ADD rust-genes/ rust-genes/
+ADD rust-auth/ rust-auth/
+ADD rust-sys/ rust-sys/
 
 WORKDIR /app/rust-edb-api
 
@@ -16,6 +18,7 @@ FROM debian as release-stage
 WORKDIR /
 
 RUN apt update && apt install -y libsqlite3-dev
+RUN apt update && apt install -y openssl-dev
 COPY --from=build-stage /app/rust-edb-api/target/release/edb-api /edb-api
 # required to open binding to all address and not just localhost
 COPY --from=build-stage /app/rust-edb-api/Rocket.toml /Rocket.toml
