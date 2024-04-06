@@ -22,6 +22,8 @@
 
 # vendor/
 
+.env
+
 go-edb-api
 
 data/
