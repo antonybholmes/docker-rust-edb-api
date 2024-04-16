@@ -1,4 +1,5 @@
-git clone git@github.com:antonybholmes/rust-edb-api.git
+#git clone git@github.com:antonybholmes/rust-edb-api.git
+git clone git@github.com:antonybholmes/rust-edb-api-axum.git
 git clone git@github.com:antonybholmes/rust-dna.git
 git clone git@github.com:antonybholmes/rust-auth.git
 git clone git@github.com:antonybholmes/rust-sys.git
@@ -12,5 +13,5 @@ do
 	cd ${pwd}
 done
 
-mkdir -p data
+
 mkdir -p logs
