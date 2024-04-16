@@ -1,0 +1,603 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 714B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/rust:latest
+#2 DONE 0.3s
+
+#3 [internal] load metadata for docker.io/library/debian:latest
+#3 DONE 0.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 1.31MB 0.0s done
+#5 DONE 0.0s
+
+#6 [release-stage 1/4] FROM docker.io/library/debian:latest@sha256:b37bc259c67238d814516548c17ad912f26c3eed48dd9bb54893eafec8739c89
+#6 resolve docker.io/library/debian:latest@sha256:b37bc259c67238d814516548c17ad912f26c3eed48dd9bb54893eafec8739c89 done
+#6 sha256:b37bc259c67238d814516548c17ad912f26c3eed48dd9bb54893eafec8739c89 1.85kB / 1.85kB done
+#6 sha256:ada577e24663e2f16bd2aa706bd11d4594f52b9ae08fd3a2156eeefdb8dff1a2 529B / 529B done
+#6 sha256:e15dbfac2d2b38406db17278673b8d905785386f916a843887115566d7a9d97a 1.46kB / 1.46kB done
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 2.10MB / 49.56MB 0.1s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 5.24MB / 49.56MB 0.2s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 9.44MB / 49.56MB 0.3s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 12.58MB / 49.56MB 0.4s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 20.97MB / 49.56MB 0.6s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 25.17MB / 49.56MB 0.7s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 29.36MB / 49.56MB 0.8s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 39.85MB / 49.56MB 1.1s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 47.19MB / 49.56MB 1.3s
+#6 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 49.56MB / 49.56MB 1.4s done
+#6 extracting sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f
+#6 extracting sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 0.6s done
+#6 DONE 2.0s
+
+#7 [build-stage 1/9] FROM docker.io/library/rust:latest@sha256:da23629cc6826f0c395c8697994cdce0b5ac6850a695c448a101c3cc9cd6a59b
+#7 resolve docker.io/library/rust:latest@sha256:da23629cc6826f0c395c8697994cdce0b5ac6850a695c448a101c3cc9cd6a59b done
+#7 sha256:da23629cc6826f0c395c8697994cdce0b5ac6850a695c448a101c3cc9cd6a59b 6.22kB / 6.22kB done
+#7 sha256:6361801bd55ffec96b953437f1083a8d730320b0809292d7d84425ff5f3223a3 1.94kB / 1.94kB done
+#7 sha256:ead19e243dc6f0b82077e2f7aca0a70a7e4fdd9300f6fa71b1557210b6bea496 4.19kB / 4.19kB done
+#7 sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f 49.56MB / 49.56MB 1.3s done
+#7 sha256:7247ea8d81e671d079d67f3a9909315ef4641b45db90d62a1b18e3430c1937d4 24.05MB / 24.05MB 0.8s done
+#7 sha256:be374d06f38273b62ddd7aa5bc3ce3f9c781fd49a1f5a5dd94a46d2986920d7a 64.14MB / 64.14MB 1.4s done
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 55.57MB / 211.14MB 2.0s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 27.26MB / 172.88MB 2.0s
+#7 extracting sha256:7247ea8d81e671d079d67f3a9909315ef4641b45db90d62a1b18e3430c1937d4 0.1s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 69.21MB / 211.14MB 2.2s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 36.70MB / 172.88MB 2.2s
+#7 extracting sha256:7247ea8d81e671d079d67f3a9909315ef4641b45db90d62a1b18e3430c1937d4 0.2s done
+#7 extracting sha256:be374d06f38273b62ddd7aa5bc3ce3f9c781fd49a1f5a5dd94a46d2986920d7a
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 82.84MB / 211.14MB 2.4s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 47.19MB / 172.88MB 2.4s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 97.52MB / 211.14MB 2.7s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 57.67MB / 172.88MB 2.7s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 118.49MB / 211.14MB 3.0s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 72.35MB / 172.88MB 3.0s
+#7 extracting sha256:be374d06f38273b62ddd7aa5bc3ce3f9c781fd49a1f5a5dd94a46d2986920d7a 0.7s done
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 135.27MB / 211.14MB 3.3s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 90.18MB / 172.88MB 3.3s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 154.14MB / 211.14MB 3.6s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 108.00MB / 172.88MB 3.6s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 173.02MB / 211.14MB 3.9s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 122.68MB / 172.88MB 3.9s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 186.65MB / 211.14MB 4.1s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 135.27MB / 172.88MB 4.2s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 206.57MB / 211.14MB 4.4s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 144.70MB / 172.88MB 4.4s
+#7 sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 211.14MB / 211.14MB 4.5s done
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 157.29MB / 172.88MB 4.6s
+#7 extracting sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 172.88MB / 172.88MB 4.8s
+#7 sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 172.88MB / 172.88MB 4.8s done
+#7 extracting sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051 2.0s done
+#7 extracting sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 0.1s
+#7 ...
+
+#8 [release-stage 2/4] RUN apt update && apt install -y libsqlite3-dev
+#8 0.180 
+#8 0.180 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#8 0.180 
+#8 0.251 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#8 0.322 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#8 0.347 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#8 0.377 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8786 kB]
+#8 0.593 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [12.7 kB]
+#8 0.610 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [151 kB]
+#8 1.097 Fetched 9204 kB in 1s (10.1 MB/s)
+#8 1.097 Reading package lists...
+#8 1.327 Building dependency tree...
+#8 1.374 Reading state information...
+#8 1.380 All packages are up to date.
+#8 1.383 
+#8 1.383 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#8 1.383 
+#8 1.383 Reading package lists...
+#8 1.613 Building dependency tree...
+#8 1.660 Reading state information...
+#8 1.720 The following additional packages will be installed:
+#8 1.720   fontconfig-config fonts-dejavu-core krb5-locales libabsl20220623 libaom3
+#8 1.720   libavif15 libbrotli1 libbsd0 libc-dev-bin libc-devtools libc6-dev
+#8 1.720   libcrypt-dev libdav1d6 libde265-0 libdeflate0 libexpat1 libfontconfig1
+#8 1.720   libfreetype6 libgav1-1 libgd3 libgssapi-krb5-2 libheif1 libjbig0
+#8 1.720   libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblerc4
+#8 1.720   libnsl-dev libnsl2 libnuma1 libpng16-16 librav1e0 libsqlite3-0 libssl3
+#8 1.720   libsvtav1enc1 libtiff6 libtirpc-common libtirpc-dev libtirpc3 libwebp7
+#8 1.720   libx11-6 libx11-data libx265-199 libxau6 libxcb1 libxdmcp6 libxpm4 libyuv0
+#8 1.720   linux-libc-dev manpages manpages-dev rpcsvc-proto
+#8 1.720 Suggested packages:
+#8 1.720   glibc-doc libgd-tools krb5-doc krb5-user sqlite3-doc man-browser
+#8 1.895 The following NEW packages will be installed:
+#8 1.895   fontconfig-config fonts-dejavu-core krb5-locales libabsl20220623 libaom3
+#8 1.895   libavif15 libbrotli1 libbsd0 libc-dev-bin libc-devtools libc6-dev
+#8 1.895   libcrypt-dev libdav1d6 libde265-0 libdeflate0 libexpat1 libfontconfig1
+#8 1.895   libfreetype6 libgav1-1 libgd3 libgssapi-krb5-2 libheif1 libjbig0
+#8 1.895   libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblerc4
+#8 1.896   libnsl-dev libnsl2 libnuma1 libpng16-16 librav1e0 libsqlite3-0
+#8 1.896   libsqlite3-dev libssl3 libsvtav1enc1 libtiff6 libtirpc-common libtirpc-dev
+#8 1.896   libtirpc3 libwebp7 libx11-6 libx11-data libx265-199 libxau6 libxcb1
+#8 1.896   libxdmcp6 libxpm4 libyuv0 linux-libc-dev manpages manpages-dev rpcsvc-proto
+#8 1.944 0 upgraded, 55 newly installed, 0 to remove and 0 not upgraded.
+#8 1.944 Need to get 25.6 MB of archives.
+#8 1.944 After this operation, 92.6 MB of additional disk space will be used.
+#8 1.944 Get:1 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u1 [62.7 kB]
+#8 1.975 Get:2 http://deb.debian.org/debian bookworm/main amd64 manpages all 6.03-2 [1332 kB]
+#8 2.116 Get:3 http://deb.debian.org/debian bookworm/main amd64 fonts-dejavu-core all 2.37-6 [1068 kB]
+#8 2.245 Get:4 http://deb.debian.org/debian bookworm/main amd64 fontconfig-config amd64 2.14.1-4 [315 kB]
+#8 2.279 Get:5 http://deb.debian.org/debian bookworm/main amd64 libabsl20220623 amd64 20220623.1-1 [391 kB]
+#8 2.328 Get:6 http://deb.debian.org/debian bookworm/main amd64 libaom3 amd64 3.6.0-1 [1851 kB]
+#8 2.478 Get:7 http://deb.debian.org/debian bookworm/main amd64 libdav1d6 amd64 1.0.0-2 [495 kB]
+#8 2.536 Get:8 http://deb.debian.org/debian bookworm/main amd64 libgav1-1 amd64 0.18.0-1+b1 [332 kB]
+#8 2.556 Get:9 http://deb.debian.org/debian bookworm/main amd64 librav1e0 amd64 0.5.1-6 [763 kB]
+#8 2.592 Get:10 http://deb.debian.org/debian bookworm/main amd64 libsvtav1enc1 amd64 1.4.1+dfsg-1 [2121 kB]
+#8 2.686 Get:11 http://deb.debian.org/debian bookworm/main amd64 libjpeg62-turbo amd64 1:2.1.5-2 [166 kB]
+#8 2.693 Get:12 http://deb.debian.org/debian bookworm/main amd64 libyuv0 amd64 0.0~git20230123.b2528b0-1 [168 kB]
+#8 2.697 Get:13 http://deb.debian.org/debian bookworm/main amd64 libavif15 amd64 0.11.1-1 [93.8 kB]
+#8 2.700 Get:14 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+#8 2.709 Get:15 http://deb.debian.org/debian bookworm/main amd64 libbsd0 amd64 0.11.7-2 [117 kB]
+#8 2.713 Get:16 http://deb.debian.org/debian bookworm/main amd64 libc-dev-bin amd64 2.36-9+deb12u4 [45.4 kB]
+#8 2.716 Get:17 http://deb.debian.org/debian bookworm/main amd64 libexpat1 amd64 2.5.0-1 [99.3 kB]
+#8 2.717 Get:18 http://deb.debian.org/debian bookworm/main amd64 libpng16-16 amd64 1.6.39-2 [276 kB]
+#8 2.728 Get:19 http://deb.debian.org/debian bookworm/main amd64 libfreetype6 amd64 2.12.1+dfsg-5 [399 kB]
+#8 2.746 Get:20 http://deb.debian.org/debian bookworm/main amd64 libfontconfig1 amd64 2.14.1-4 [386 kB]
+#8 2.760 Get:21 http://deb.debian.org/debian bookworm/main amd64 libde265-0 amd64 1.0.11-1+deb12u2 [185 kB]
+#8 2.766 Get:22 http://deb.debian.org/debian bookworm/main amd64 libnuma1 amd64 2.0.16-1 [21.0 kB]
+#8 2.767 Get:23 http://deb.debian.org/debian bookworm/main amd64 libx265-199 amd64 3.5-2+b1 [1150 kB]
+#8 2.801 Get:24 http://deb.debian.org/debian bookworm/main amd64 libheif1 amd64 1.15.1-1 [215 kB]
+#8 2.806 Get:25 http://deb.debian.org/debian bookworm/main amd64 libdeflate0 amd64 1.14-1 [61.4 kB]
+#8 2.807 Get:26 http://deb.debian.org/debian bookworm/main amd64 libjbig0 amd64 2.1-6.1 [31.7 kB]
+#8 2.809 Get:27 http://deb.debian.org/debian bookworm/main amd64 liblerc4 amd64 4.0.0+ds-2 [170 kB]
+#8 2.813 Get:28 http://deb.debian.org/debian bookworm/main amd64 libwebp7 amd64 1.2.4-0.2+deb12u1 [286 kB]
+#8 2.822 Get:29 http://deb.debian.org/debian bookworm/main amd64 libtiff6 amd64 4.5.0-6+deb12u1 [316 kB]
+#8 2.831 Get:30 http://deb.debian.org/debian bookworm/main amd64 libxau6 amd64 1:1.0.9-1 [19.7 kB]
+#8 2.832 Get:31 http://deb.debian.org/debian bookworm/main amd64 libxdmcp6 amd64 1:1.1.2-3 [26.3 kB]
+#8 2.832 Get:32 http://deb.debian.org/debian bookworm/main amd64 libxcb1 amd64 1.15-1 [144 kB]
+#8 2.836 Get:33 http://deb.debian.org/debian bookworm/main amd64 libx11-data all 2:1.8.4-2+deb12u2 [292 kB]
+#8 2.845 Get:34 http://deb.debian.org/debian bookworm/main amd64 libx11-6 amd64 2:1.8.4-2+deb12u2 [760 kB]
+#8 2.868 Get:35 http://deb.debian.org/debian bookworm/main amd64 libxpm4 amd64 1:3.5.12-1.1+deb12u1 [48.6 kB]
+#8 2.868 Get:36 http://deb.debian.org/debian bookworm/main amd64 libgd3 amd64 2.3.3-9 [124 kB]
+#8 2.871 Get:37 http://deb.debian.org/debian bookworm/main amd64 libc-devtools amd64 2.36-9+deb12u4 [53.0 kB]
+#8 2.873 Get:38 http://deb.debian.org/debian-security bookworm-security/main amd64 linux-libc-dev amd64 6.1.85-1 [1968 kB]
+#8 2.929 Get:39 http://deb.debian.org/debian bookworm/main amd64 libcrypt-dev amd64 1:4.4.33-2 [118 kB]
+#8 2.933 Get:40 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u1 [32.4 kB]
+#8 2.934 Get:41 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u1 [78.9 kB]
+#8 2.936 Get:42 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+#8 2.936 Get:43 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 3.0.11-1~deb12u2 [2019 kB]
+#8 2.993 Get:44 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u1 [332 kB]
+#8 3.001 Get:45 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u1 [134 kB]
+#8 3.004 Get:46 http://deb.debian.org/debian bookworm/main amd64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+#8 3.004 Get:47 http://deb.debian.org/debian bookworm/main amd64 libtirpc3 amd64 1.3.3+ds-1 [85.2 kB]
+#8 3.007 Get:48 http://deb.debian.org/debian bookworm/main amd64 libnsl2 amd64 1.3.0-2 [39.5 kB]
+#8 3.008 Get:49 http://deb.debian.org/debian bookworm/main amd64 libtirpc-dev amd64 1.3.3+ds-1 [191 kB]
+#8 3.012 Get:50 http://deb.debian.org/debian bookworm/main amd64 libnsl-dev amd64 1.3.0-2 [66.4 kB]
+#8 3.014 Get:51 http://deb.debian.org/debian bookworm/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+#8 3.016 Get:52 http://deb.debian.org/debian bookworm/main amd64 libc6-dev amd64 2.36-9+deb12u4 [1897 kB]
+#8 3.063 Get:53 http://deb.debian.org/debian bookworm/main amd64 libsqlite3-0 amd64 3.40.1-2 [837 kB]
+#8 3.083 Get:54 http://deb.debian.org/debian bookworm/main amd64 libsqlite3-dev amd64 3.40.1-2 [1025 kB]
+#8 3.107 Get:55 http://deb.debian.org/debian bookworm/main amd64 manpages-dev all 6.03-2 [2030 kB]
+#8 3.210 debconf: delaying package configuration, since apt-utils is not installed
+#8 3.220 Fetched 25.6 MB in 1s (20.4 MB/s)
+#8 3.226 Selecting previously unselected package krb5-locales.
+#8 3.226 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6090 files and directories currently installed.)
+#8 3.228 Preparing to unpack .../00-krb5-locales_1.20.1-2+deb12u1_all.deb ...
+#8 3.228 Unpacking krb5-locales (1.20.1-2+deb12u1) ...
+#8 3.239 Selecting previously unselected package manpages.
+#8 3.240 Preparing to unpack .../01-manpages_6.03-2_all.deb ...
+#8 3.241 Unpacking manpages (6.03-2) ...
+#8 3.293 Selecting previously unselected package fonts-dejavu-core.
+#8 3.294 Preparing to unpack .../02-fonts-dejavu-core_2.37-6_all.deb ...
+#8 3.295 Unpacking fonts-dejavu-core (2.37-6) ...
+#8 3.352 Selecting previously unselected package fontconfig-config.
+#8 3.353 Preparing to unpack .../03-fontconfig-config_2.14.1-4_amd64.deb ...
+#8 3.392 Unpacking fontconfig-config (2.14.1-4) ...
+#8 3.408 Selecting previously unselected package libabsl20220623:amd64.
+#8 3.409 Preparing to unpack .../04-libabsl20220623_20220623.1-1_amd64.deb ...
+#8 3.411 Unpacking libabsl20220623:amd64 (20220623.1-1) ...
+#8 3.438 Selecting previously unselected package libaom3:amd64.
+#8 3.439 Preparing to unpack .../05-libaom3_3.6.0-1_amd64.deb ...
+#8 3.440 Unpacking libaom3:amd64 (3.6.0-1) ...
+#8 3.521 Selecting previously unselected package libdav1d6:amd64.
+#8 3.522 Preparing to unpack .../06-libdav1d6_1.0.0-2_amd64.deb ...
+#8 3.522 Unpacking libdav1d6:amd64 (1.0.0-2) ...
+#8 3.551 Selecting previously unselected package libgav1-1:amd64.
+#8 3.551 Preparing to unpack .../07-libgav1-1_0.18.0-1+b1_amd64.deb ...
+#8 3.552 Unpacking libgav1-1:amd64 (0.18.0-1+b1) ...
+#8 3.575 Selecting previously unselected package librav1e0:amd64.
+#8 3.576 Preparing to unpack .../08-librav1e0_0.5.1-6_amd64.deb ...
+#8 3.576 Unpacking librav1e0:amd64 (0.5.1-6) ...
+#8 3.617 Selecting previously unselected package libsvtav1enc1:amd64.
+#8 3.618 Preparing to unpack .../09-libsvtav1enc1_1.4.1+dfsg-1_amd64.deb ...
+#8 3.619 Unpacking libsvtav1enc1:amd64 (1.4.1+dfsg-1) ...
+#8 3.715 Selecting previously unselected package libjpeg62-turbo:amd64.
+#8 3.716 Preparing to unpack .../10-libjpeg62-turbo_1%3a2.1.5-2_amd64.deb ...
+#8 3.717 Unpacking libjpeg62-turbo:amd64 (1:2.1.5-2) ...
+#8 3.733 Selecting previously unselected package libyuv0:amd64.
+#8 3.734 Preparing to unpack .../11-libyuv0_0.0~git20230123.b2528b0-1_amd64.deb ...
+#8 3.734 Unpacking libyuv0:amd64 (0.0~git20230123.b2528b0-1) ...
+#8 3.750 Selecting previously unselected package libavif15:amd64.
+#8 3.751 Preparing to unpack .../12-libavif15_0.11.1-1_amd64.deb ...
+#8 3.752 Unpacking libavif15:amd64 (0.11.1-1) ...
+#8 3.764 Selecting previously unselected package libbrotli1:amd64.
+#8 3.765 Preparing to unpack .../13-libbrotli1_1.0.9-2+b6_amd64.deb ...
+#8 3.766 Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+#8 3.787 Selecting previously unselected package libbsd0:amd64.
+#8 3.787 Preparing to unpack .../14-libbsd0_0.11.7-2_amd64.deb ...
+#8 3.788 Unpacking libbsd0:amd64 (0.11.7-2) ...
+#8 3.800 Selecting previously unselected package libc-dev-bin.
+#8 3.800 Preparing to unpack .../15-libc-dev-bin_2.36-9+deb12u4_amd64.deb ...
+#8 3.802 Unpacking libc-dev-bin (2.36-9+deb12u4) ...
+#8 3.812 Selecting previously unselected package libexpat1:amd64.
+#8 3.813 Preparing to unpack .../16-libexpat1_2.5.0-1_amd64.deb ...
+#8 3.813 Unpacking libexpat1:amd64 (2.5.0-1) ...
+#8 3.825 Selecting previously unselected package libpng16-16:amd64.
+#8 3.826 Preparing to unpack .../17-libpng16-16_1.6.39-2_amd64.deb ...
+#8 3.826 Unpacking libpng16-16:amd64 (1.6.39-2) ...
+#8 3.843 Selecting previously unselected package libfreetype6:amd64.
+#8 3.844 Preparing to unpack .../18-libfreetype6_2.12.1+dfsg-5_amd64.deb ...
+#8 3.845 Unpacking libfreetype6:amd64 (2.12.1+dfsg-5) ...
+#8 3.869 Selecting previously unselected package libfontconfig1:amd64.
+#8 3.869 Preparing to unpack .../19-libfontconfig1_2.14.1-4_amd64.deb ...
+#8 3.870 Unpacking libfontconfig1:amd64 (2.14.1-4) ...
+#8 3.884 Selecting previously unselected package libde265-0:amd64.
+#8 3.885 Preparing to unpack .../20-libde265-0_1.0.11-1+deb12u2_amd64.deb ...
+#8 3.886 Unpacking libde265-0:amd64 (1.0.11-1+deb12u2) ...
+#8 3.901 Selecting previously unselected package libnuma1:amd64.
+#8 3.902 Preparing to unpack .../21-libnuma1_2.0.16-1_amd64.deb ...
+#8 3.902 Unpacking libnuma1:amd64 (2.0.16-1) ...
+#8 3.911 Selecting previously unselected package libx265-199:amd64.
+#8 3.912 Preparing to unpack .../22-libx265-199_3.5-2+b1_amd64.deb ...
+#8 3.913 Unpacking libx265-199:amd64 (3.5-2+b1) ...
+#8 3.976 Selecting previously unselected package libheif1:amd64.
+#8 3.976 Preparing to unpack .../23-libheif1_1.15.1-1_amd64.deb ...
+#8 3.977 Unpacking libheif1:amd64 (1.15.1-1) ...
+#8 3.994 Selecting previously unselected package libdeflate0:amd64.
+#8 3.994 Preparing to unpack .../24-libdeflate0_1.14-1_amd64.deb ...
+#8 3.995 Unpacking libdeflate0:amd64 (1.14-1) ...
+#8 4.005 Selecting previously unselected package libjbig0:amd64.
+#8 4.006 Preparing to unpack .../25-libjbig0_2.1-6.1_amd64.deb ...
+#8 4.007 Unpacking libjbig0:amd64 (2.1-6.1) ...
+#8 4.016 Selecting previously unselected package liblerc4:amd64.
+#8 4.016 Preparing to unpack .../26-liblerc4_4.0.0+ds-2_amd64.deb ...
+#8 4.017 Unpacking liblerc4:amd64 (4.0.0+ds-2) ...
+#8 4.033 Selecting previously unselected package libwebp7:amd64.
+#8 4.033 Preparing to unpack .../27-libwebp7_1.2.4-0.2+deb12u1_amd64.deb ...
+#8 4.034 Unpacking libwebp7:amd64 (1.2.4-0.2+deb12u1) ...
+#8 4.055 Selecting previously unselected package libtiff6:amd64.
+#8 4.056 Preparing to unpack .../28-libtiff6_4.5.0-6+deb12u1_amd64.deb ...
+#8 4.057 Unpacking libtiff6:amd64 (4.5.0-6+deb12u1) ...
+#8 4.075 Selecting previously unselected package libxau6:amd64.
+#8 4.075 Preparing to unpack .../29-libxau6_1%3a1.0.9-1_amd64.deb ...
+#8 4.076 Unpacking libxau6:amd64 (1:1.0.9-1) ...
+#8 4.086 Selecting previously unselected package libxdmcp6:amd64.
+#8 4.087 Preparing to unpack .../30-libxdmcp6_1%3a1.1.2-3_amd64.deb ...
+#8 4.088 Unpacking libxdmcp6:amd64 (1:1.1.2-3) ...
+#8 4.101 Selecting previously unselected package libxcb1:amd64.
+#8 4.101 Preparing to unpack .../31-libxcb1_1.15-1_amd64.deb ...
+#8 4.102 Unpacking libxcb1:amd64 (1.15-1) ...
+#8 4.117 Selecting previously unselected package libx11-data.
+#8 4.118 Preparing to unpack .../32-libx11-data_2%3a1.8.4-2+deb12u2_all.deb ...
+#8 4.118 Unpacking libx11-data (2:1.8.4-2+deb12u2) ...
+#8 4.142 Selecting previously unselected package libx11-6:amd64.
+#8 4.142 Preparing to unpack .../33-libx11-6_2%3a1.8.4-2+deb12u2_amd64.deb ...
+#8 4.143 Unpacking libx11-6:amd64 (2:1.8.4-2+deb12u2) ...
+#8 4.184 Selecting previously unselected package libxpm4:amd64.
+#8 4.184 Preparing to unpack .../34-libxpm4_1%3a3.5.12-1.1+deb12u1_amd64.deb ...
+#8 4.185 Unpacking libxpm4:amd64 (1:3.5.12-1.1+deb12u1) ...
+#8 4.195 Selecting previously unselected package libgd3:amd64.
+#8 4.196 Preparing to unpack .../35-libgd3_2.3.3-9_amd64.deb ...
+#8 4.196 Unpacking libgd3:amd64 (2.3.3-9) ...
+#8 4.209 Selecting previously unselected package libc-devtools.
+#8 4.209 Preparing to unpack .../36-libc-devtools_2.36-9+deb12u4_amd64.deb ...
+#8 4.210 Unpacking libc-devtools (2.36-9+deb12u4) ...
+#8 4.222 Selecting previously unselected package linux-libc-dev:amd64.
+#8 4.222 Preparing to unpack .../37-linux-libc-dev_6.1.85-1_amd64.deb ...
+#8 4.223 Unpacking linux-libc-dev:amd64 (6.1.85-1) ...
+#8 4.289 Selecting previously unselected package libcrypt-dev:amd64.
+#8 4.290 Preparing to unpack .../38-libcrypt-dev_1%3a4.4.33-2_amd64.deb ...
+#8 4.293 Unpacking libcrypt-dev:amd64 (1:4.4.33-2) ...
+#8 4.306 Selecting previously unselected package libkrb5support0:amd64.
+#8 4.306 Preparing to unpack .../39-libkrb5support0_1.20.1-2+deb12u1_amd64.deb ...
+#8 4.307 Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u1) ...
+#8 4.317 Selecting previously unselected package libk5crypto3:amd64.
+#8 4.317 Preparing to unpack .../40-libk5crypto3_1.20.1-2+deb12u1_amd64.deb ...
+#8 4.318 Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u1) ...
+#8 4.331 Selecting previously unselected package libkeyutils1:amd64.
+#8 4.332 Preparing to unpack .../41-libkeyutils1_1.6.3-2_amd64.deb ...
+#8 4.333 Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+#8 4.343 Selecting previously unselected package libssl3:amd64.
+#8 4.344 Preparing to unpack .../42-libssl3_3.0.11-1~deb12u2_amd64.deb ...
+#8 4.345 Unpacking libssl3:amd64 (3.0.11-1~deb12u2) ...
+#8 4.435 Selecting previously unselected package libkrb5-3:amd64.
+#8 4.436 Preparing to unpack .../43-libkrb5-3_1.20.1-2+deb12u1_amd64.deb ...
+#8 4.437 Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u1) ...
+#8 4.460 Selecting previously unselected package libgssapi-krb5-2:amd64.
+#8 4.461 Preparing to unpack .../44-libgssapi-krb5-2_1.20.1-2+deb12u1_amd64.deb ...
+#8 4.462 Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u1) ...
+#8 4.477 Selecting previously unselected package libtirpc-common.
+#8 4.477 Preparing to unpack .../45-libtirpc-common_1.3.3+ds-1_all.deb ...
+#8 4.478 Unpacking libtirpc-common (1.3.3+ds-1) ...
+#8 4.488 Selecting previously unselected package libtirpc3:amd64.
+#8 4.489 Preparing to unpack .../46-libtirpc3_1.3.3+ds-1_amd64.deb ...
+#8 4.490 Unpacking libtirpc3:amd64 (1.3.3+ds-1) ...
+#8 4.504 Selecting previously unselected package libnsl2:amd64.
+#8 4.505 Preparing to unpack .../47-libnsl2_1.3.0-2_amd64.deb ...
+#8 4.506 Unpacking libnsl2:amd64 (1.3.0-2) ...
+#8 4.516 Selecting previously unselected package libtirpc-dev:amd64.
+#8 4.517 Preparing to unpack .../48-libtirpc-dev_1.3.3+ds-1_amd64.deb ...
+#8 4.518 Unpacking libtirpc-dev:amd64 (1.3.3+ds-1) ...
+#8 4.534 Selecting previously unselected package libnsl-dev:amd64.
+#8 4.534 Preparing to unpack .../49-libnsl-dev_1.3.0-2_amd64.deb ...
+#8 4.535 Unpacking libnsl-dev:amd64 (1.3.0-2) ...
+#8 4.546 Selecting previously unselected package rpcsvc-proto.
+#8 4.547 Preparing to unpack .../50-rpcsvc-proto_1.4.3-1_amd64.deb ...
+#8 4.547 Unpacking rpcsvc-proto (1.4.3-1) ...
+#8 4.558 Selecting previously unselected package libc6-dev:amd64.
+#8 4.559 Preparing to unpack .../51-libc6-dev_2.36-9+deb12u4_amd64.deb ...
+#8 4.559 Unpacking libc6-dev:amd64 (2.36-9+deb12u4) ...
+#8 4.651 Selecting previously unselected package libsqlite3-0:amd64.
+#8 4.652 Preparing to unpack .../52-libsqlite3-0_3.40.1-2_amd64.deb ...
+#8 4.653 Unpacking libsqlite3-0:amd64 (3.40.1-2) ...
+#8 4.685 Selecting previously unselected package libsqlite3-dev:amd64.
+#8 4.686 Preparing to unpack .../53-libsqlite3-dev_3.40.1-2_amd64.deb ...
+#8 4.686 Unpacking libsqlite3-dev:amd64 (3.40.1-2) ...
+#8 4.731 Selecting previously unselected package manpages-dev.
+#8 4.732 Preparing to unpack .../54-manpages-dev_6.03-2_all.deb ...
+#8 4.733 Unpacking manpages-dev (6.03-2) ...
+#8 4.888 Setting up libexpat1:amd64 (2.5.0-1) ...
+#8 4.891 Setting up libaom3:amd64 (3.6.0-1) ...
+#8 4.893 Setting up libabsl20220623:amd64 (20220623.1-1) ...
+#8 4.895 Setting up libxau6:amd64 (1:1.0.9-1) ...
+#8 4.897 Setting up libkeyutils1:amd64 (1.6.3-2) ...
+#8 4.899 Setting up liblerc4:amd64 (4.0.0+ds-2) ...
+#8 4.901 Setting up manpages (6.03-2) ...
+#8 4.904 Setting up libtirpc-common (1.3.3+ds-1) ...
+#8 4.906 Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+#8 4.909 Setting up libsqlite3-0:amd64 (3.40.1-2) ...
+#8 4.911 Setting up libssl3:amd64 (3.0.11-1~deb12u2) ...
+#8 4.913 Setting up libdeflate0:amd64 (1.14-1) ...
+#8 4.915 Setting up linux-libc-dev:amd64 (6.1.85-1) ...
+#8 4.917 Setting up krb5-locales (1.20.1-2+deb12u1) ...
+#8 4.919 Setting up libsvtav1enc1:amd64 (1.4.1+dfsg-1) ...
+#8 4.922 Setting up libjbig0:amd64 (2.1-6.1) ...
+#8 4.924 Setting up librav1e0:amd64 (0.5.1-6) ...
+#8 4.926 Setting up libkrb5support0:amd64 (1.20.1-2+deb12u1) ...
+#8 4.929 Setting up rpcsvc-proto (1.4.3-1) ...
+#8 4.931 Setting up libjpeg62-turbo:amd64 (1:2.1.5-2) ...
+#8 4.933 Setting up libx11-data (2:1.8.4-2+deb12u2) ...
+#8 4.935 Setting up libpng16-16:amd64 (1.6.39-2) ...
+#8 4.937 Setting up fonts-dejavu-core (2.37-6) ...
+#8 4.948 Setting up libgav1-1:amd64 (0.18.0-1+b1) ...
+#8 4.950 Setting up libk5crypto3:amd64 (1.20.1-2+deb12u1) ...
+#8 4.952 Setting up libdav1d6:amd64 (1.0.0-2) ...
+#8 4.955 Setting up libwebp7:amd64 (1.2.4-0.2+deb12u1) ...
+#8 4.957 Setting up libnuma1:amd64 (2.0.16-1) ...
+#8 4.960 Setting up libcrypt-dev:amd64 (1:4.4.33-2) ...
+#8 4.964 Setting up libtiff6:amd64 (4.5.0-6+deb12u1) ...
+#8 4.966 Setting up libkrb5-3:amd64 (1.20.1-2+deb12u1) ...
+#8 4.968 Setting up libde265-0:amd64 (1.0.11-1+deb12u2) ...
+#8 4.970 Setting up libc-dev-bin (2.36-9+deb12u4) ...
+#8 4.972 Setting up libbsd0:amd64 (0.11.7-2) ...
+#8 4.974 Setting up libyuv0:amd64 (0.0~git20230123.b2528b0-1) ...
+#8 4.976 Setting up manpages-dev (6.03-2) ...
+#8 4.978 Setting up libxdmcp6:amd64 (1:1.1.2-3) ...
+#8 4.980 Setting up libxcb1:amd64 (1.15-1) ...
+#8 4.982 Setting up libavif15:amd64 (0.11.1-1) ...
+#8 4.985 Setting up fontconfig-config (2.14.1-4) ...
+#8 5.017 debconf: unable to initialize frontend: Dialog
+#8 5.017 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#8 5.017 debconf: falling back to frontend: Readline
+#8 5.017 debconf: unable to initialize frontend: Readline
+#8 5.017 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/x86_64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+#8 5.017 debconf: falling back to frontend: Teletype
+#8 ...
+
+#7 [build-stage 1/9] FROM docker.io/library/rust:latest@sha256:da23629cc6826f0c395c8697994cdce0b5ac6850a695c448a101c3cc9cd6a59b
+#7 ...
+
+#8 [release-stage 2/4] RUN apt update && apt install -y libsqlite3-dev
+#8 5.068 Setting up libfreetype6:amd64 (2.12.1+dfsg-5) ...
+#8 5.070 Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u1) ...
+#8 5.073 Setting up libx265-199:amd64 (3.5-2+b1) ...
+#8 5.075 Setting up libx11-6:amd64 (2:1.8.4-2+deb12u2) ...
+#8 5.077 Setting up libfontconfig1:amd64 (2.14.1-4) ...
+#8 5.079 Setting up libtirpc3:amd64 (1.3.3+ds-1) ...
+#8 5.081 Setting up libxpm4:amd64 (1:3.5.12-1.1+deb12u1) ...
+#8 5.084 Setting up libheif1:amd64 (1.15.1-1) ...
+#8 5.086 Setting up libtirpc-dev:amd64 (1.3.3+ds-1) ...
+#8 5.088 Setting up libgd3:amd64 (2.3.3-9) ...
+#8 5.090 Setting up libnsl2:amd64 (1.3.0-2) ...
+#8 5.092 Setting up libc-devtools (2.36-9+deb12u4) ...
+#8 5.094 Setting up libnsl-dev:amd64 (1.3.0-2) ...
+#8 5.096 Setting up libc6-dev:amd64 (2.36-9+deb12u4) ...
+#8 5.098 Setting up libsqlite3-dev:amd64 (3.40.1-2) ...
+#8 5.101 Processing triggers for libc-bin (2.36-9+deb12u4) ...
+#8 DONE 5.5s
+
+#7 [build-stage 1/9] FROM docker.io/library/rust:latest@sha256:da23629cc6826f0c395c8697994cdce0b5ac6850a695c448a101c3cc9cd6a59b
+#7 extracting sha256:d4251e2c0d85d5696b1917655ebc9009cc6d07741a7410385ecdbf440cc57e92 1.3s done
+#7 DONE 7.9s
+
+#9 [build-stage 2/9] WORKDIR /app
+#9 DONE 0.1s
+
+#10 [build-stage 3/9] ADD rust-edb-api-axum/ rust-edb-api-axum/
+#10 DONE 0.0s
+
+#11 [build-stage 4/9] ADD rust-dna/ rust-dna/
+#11 DONE 0.0s
+
+#12 [build-stage 5/9] ADD rust-genes/ rust-genes/
+#12 DONE 0.0s
+
+#13 [build-stage 6/9] ADD rust-auth/ rust-auth/
+#13 DONE 0.0s
+
+#14 [build-stage 7/9] ADD rust-sys/ rust-sys/
+#14 DONE 0.0s
+
+#15 [build-stage 8/9] WORKDIR /app/rust-edb-api-axum
+#15 DONE 0.0s
+
+#16 [build-stage 9/9] RUN cargo build --release
+#16 0.205     Updating crates.io index
+#16 0.431  Downloading crates ...
+#16 0.488   Downloaded cfg-if v1.0.0
+#16 0.491   Downloaded autocfg v1.2.0
+#16 0.493   Downloaded async-trait v0.1.79
+#16 0.498   Downloaded bytes v1.6.0
+#16 0.502   Downloaded axum-macros v0.4.1
+#16 0.507   Downloaded fnv v1.0.7
+#16 0.508   Downloaded dotenvy v0.15.7
+#16 0.509   Downloaded pin-project-internal v1.1.5
+#16 0.510   Downloaded heck v0.4.1
+#16 0.510   Downloaded futures-task v0.3.30
+#16 0.511   Downloaded futures-core v0.3.30
+#16 0.511   Downloaded num_cpus v1.16.0
+#16 0.513   Downloaded httparse v1.8.0
+#16 0.514   Downloaded parking_lot v0.12.1
+#16 0.515   Downloaded axum v0.7.5
+#16 0.519   Downloaded tracing-core v0.1.32
+#16 0.521   Downloaded tracing v0.1.40
+#16 0.523   Downloaded sync_wrapper v0.1.2
+#16 0.523   Downloaded tower-service v0.3.2
+#16 0.524   Downloaded once_cell v1.19.0
+#16 0.525   Downloaded tokio-macros v2.2.0
+#16 0.526   Downloaded scopeguard v1.2.0
+#16 0.526   Downloaded mio v0.8.11
+#16 0.529   Downloaded tracing-attributes v0.1.27
+#16 0.530   Downloaded proc-macro2 v1.0.79
+#16 0.532   Downloaded socket2 v0.5.6
+#16 0.533   Downloaded unicode-ident v1.0.12
+#16 0.535   Downloaded signal-hook-registry v1.4.1
+#16 0.535   Downloaded serde_derive v1.0.197
+#16 0.537   Downloaded tower v0.4.13
+#16 0.541   Downloaded syn v2.0.58
+#16 0.547   Downloaded tokio v1.37.0
+#16 0.567   Downloaded hyper v1.2.0
+#16 0.570   Downloaded futures-util v0.3.30
+#16 0.576   Downloaded serde_json v1.0.115
+#16 0.579   Downloaded matchit v0.7.3
+#16 0.580   Downloaded serde_path_to_error v0.1.16
+#16 0.581   Downloaded serde v1.0.197
+#16 0.583   Downloaded smallvec v1.13.2
+#16 0.584   Downloaded mime v0.3.17
+#16 0.584   Downloaded http-body-util v0.1.1
+#16 0.585   Downloaded lock_api v0.4.11
+#16 0.585   Downloaded serde_urlencoded v0.7.1
+#16 0.586   Downloaded quote v1.0.35
+#16 0.587   Downloaded pin-project-lite v0.2.14
+#16 0.589   Downloaded libc v0.2.153
+#16 0.604   Downloaded hyper-util v0.1.3
+#16 0.606   Downloaded futures-channel v0.3.30
+#16 0.607   Downloaded memchr v2.7.2
+#16 0.610   Downloaded itoa v1.0.11
+#16 0.610   Downloaded rustversion v1.0.14
+#16 0.611   Downloaded pin-utils v0.1.0
+#16 0.612   Downloaded parking_lot_core v0.9.9
+#16 0.613   Downloaded log v0.4.21
+#16 0.614   Downloaded tower-layer v0.3.2
+#16 0.614   Downloaded sync_wrapper v1.0.0
+#16 0.614   Downloaded ryu v1.0.17
+#16 0.616   Downloaded pin-project v1.1.5
+#16 0.621   Downloaded percent-encoding v2.3.1
+#16 0.622   Downloaded httpdate v1.0.3
+#16 0.622   Downloaded http-body v1.0.0
+#16 0.622   Downloaded http v1.1.0
+#16 0.624   Downloaded form_urlencoded v1.2.1
+#16 0.625   Downloaded axum-core v0.4.3
+#16 0.636    Compiling proc-macro2 v1.0.79
+#16 0.636    Compiling unicode-ident v1.0.12
+#16 0.636    Compiling libc v0.2.153
+#16 0.636    Compiling itoa v1.0.11
+#16 0.636    Compiling bytes v1.6.0
+#16 0.637    Compiling autocfg v1.2.0
+#16 0.637    Compiling pin-project-lite v0.2.14
+#16 0.637    Compiling futures-core v0.3.30
+#16 0.637    Compiling parking_lot_core v0.9.9
+#16 0.637    Compiling rustversion v1.0.14
+#16 0.637    Compiling cfg-if v1.0.0
+#16 0.638    Compiling fnv v1.0.7
+#16 0.639    Compiling scopeguard v1.2.0
+#16 0.639    Compiling smallvec v1.13.2
+#16 0.641    Compiling futures-task v0.3.30
+#16 0.642    Compiling serde v1.0.197
+#16 0.642    Compiling pin-utils v0.1.0
+#16 0.643    Compiling httparse v1.8.0
+#16 0.643    Compiling once_cell v1.19.0
+#16 0.643    Compiling log v0.4.21
+#16 0.645    Compiling async-trait v0.1.79
+#16 0.645    Compiling serde_json v1.0.115
+#16 0.645    Compiling tower-layer v0.3.2
+#16 0.645    Compiling ryu v1.0.17
+#16 0.652    Compiling percent-encoding v2.3.1
+#16 0.654    Compiling httpdate v1.0.3
+#16 0.658    Compiling tower-service v0.3.2
+#16 0.661    Compiling sync_wrapper v0.1.2
+#16 0.661    Compiling heck v0.4.1
+#16 0.666    Compiling mime v0.3.17
+#16 0.675    Compiling sync_wrapper v1.0.0
+#16 0.682    Compiling futures-util v0.3.30
+#16 0.691    Compiling futures-channel v0.3.30
+#16 0.713    Compiling form_urlencoded v1.2.1
+#16 0.725    Compiling dotenvy v0.15.7
+#16 0.729    Compiling memchr v2.7.2
+#16 0.731    Compiling matchit v0.7.3
+#16 0.745    Compiling tracing-core v0.1.32
+#16 0.804    Compiling lock_api v0.4.11
+#16 0.818    Compiling sys v0.1.0 (/app/rust-sys)
+#16 0.839    Compiling http v1.1.0
+#16 0.948    Compiling quote v1.0.35
+#16 0.996    Compiling axum-core v0.4.3
+#16 0.996    Compiling axum v0.7.5
+#16 1.015    Compiling syn v2.0.58
+#16 1.039    Compiling signal-hook-registry v1.4.1
+#16 1.039    Compiling mio v0.8.11
+#16 1.039    Compiling socket2 v0.5.6
+#16 1.039    Compiling num_cpus v1.16.0
+#16 1.103    Compiling parking_lot v0.12.1
+#16 1.309    Compiling http-body v1.0.0
+#16 1.333    Compiling http-body-util v0.1.1
+#16 2.192    Compiling tokio-macros v2.2.0
+#16 2.192    Compiling serde_derive v1.0.197
+#16 2.192    Compiling tracing-attributes v0.1.27
+#16 2.192    Compiling pin-project-internal v1.1.5
+#16 2.194    Compiling axum-macros v0.4.1
+#16 2.420    Compiling tokio v1.37.0
+#16 2.587    Compiling pin-project v1.1.5
+#16 2.595    Compiling tracing v0.1.40
+#16 3.966    Compiling hyper v1.2.0
+#16 3.966    Compiling tower v0.4.13
+#16 3.990    Compiling serde_urlencoded v0.7.1
+#16 3.990    Compiling serde_path_to_error v0.1.16
+#16 4.254    Compiling hyper-util v0.1.3
+#16 6.104    Compiling rust-edb-api-axum v0.1.0 (/app/rust-edb-api-axum)
+#16 6.146 warning: function `internal_error` is never used
+#16 6.146    --> src/main.rs:105:4
+#16 6.146     |
+#16 6.146 105 | fn internal_error<E>(err: E) -> (StatusCode, String)
+#16 6.146     |    ^^^^^^^^^^^^^^
+#16 6.146     |
+#16 6.146     = note: `#[warn(dead_code)]` on by default
+#16 6.146 
+#16 6.663 warning: `rust-edb-api-axum` (bin "rust-edb-api-axum") generated 1 warning
+#16 6.663     Finished release [optimized] target(s) in 6.47s
+#16 DONE 6.7s
+
+#17 [release-stage 3/4] COPY --from=build-stage /app/rust-edb-api-axum/target/release/edb-api-axum /edb-api-axum
+#17 ERROR: failed to calculate checksum of ref b2a1ff4f-a2fd-447a-9e25-8aea68cfa6e3::umsxrz6cfux79qj6vgzeengvd: "/app/rust-edb-api-axum/target/release/edb-api-axum": not found
+------
+ > [release-stage 3/4] COPY --from=build-stage /app/rust-edb-api-axum/target/release/edb-api-axum /edb-api-axum:
+------
+Dockerfile:22
+--------------------
+  20 |     RUN apt update && apt install -y libsqlite3-dev
+  21 |     #RUN apt update && apt install -y openssl-dev
+  22 | >>> COPY --from=build-stage /app/rust-edb-api-axum/target/release/edb-api-axum /edb-api-axum
+  23 |     # required to open binding to all address and not just localhost
+  24 |     # COPY --from=build-stage /app/rust-edb-api/Rocket.toml /Rocket.toml
+--------------------
+ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref b2a1ff4f-a2fd-447a-9e25-8aea68cfa6e3::umsxrz6cfux79qj6vgzeengvd: "/app/rust-edb-api-axum/target/release/edb-api-axum": not found
