@@ -1,6 +1,6 @@
 services:
   nginx:
-    container_name: nginx
+    container_name: rust-nginx
     build: 
       context: .
       dockerfile: docker/nginx/Dockerfile
@@ -16,5 +16,5 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ../data:/data
-      - ../logs:/logs
+      - ./data:/data
+      - ./logs:/logs
